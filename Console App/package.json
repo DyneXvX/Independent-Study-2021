@@ -1,0 +1,17 @@
+{
+  "name": "console-app",
+  "version": "1.0.0",
+  "description": "A basic Console Hello World App",
+  "main": "dist\\index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin Thoms",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.31"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.11"
+  }
+}
