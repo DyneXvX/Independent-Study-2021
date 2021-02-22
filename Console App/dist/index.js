@@ -8,7 +8,7 @@ console.log('This is a very simple setup in Node that can be run via node.');
 console.log('Hello World!');
 console.log('However with the power of Node we are able to effect the file system.\n');
 //creates a file in the the file folder called helloWorld.txt and write one line to that file.
-fs_1.default.writeFile('file\\helloWorld.txt', 'Hello World!', function (err) {
+fs_1.default.writeFile('helloWorld.txt', 'Hello World!', function (err) {
     if (err)
         return console.log(err);
     console.log('File was created.');
