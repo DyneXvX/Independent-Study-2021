@@ -3,8 +3,8 @@
 ## Purpose
 
 ```
-This Study is to finish my degree with the University of North Florida by helping a professor friend of mine add node.js
-to the Internet Programming Class.
+This Study is to finish my degree with the University of North Florida by helping a professor
+of mine add node.js to the Internet Programming Class.
 ```
 
 ## What is this for?
