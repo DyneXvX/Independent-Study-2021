@@ -2,8 +2,14 @@ const validator = require('validator')
 
 const getNotes = require('./note.js')
 
-const msg = getNotes()
 
-console.log(msg)
 
-console.log(validator.isEmail('student@unf.edu'))
+const command = process.argv[2]
+console.log(process.argv)
+if (command === 'add')
+{
+    console.log('Adding note!')
+} else if (command === 'another')
+{
+    console.log('another command')
+}
