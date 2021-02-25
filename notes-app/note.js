@@ -41,18 +41,28 @@ const removeNote = function (title) {
 };
 
 //list the notes
-const listNotes = function ()
-{
-    const notes = loadNotes()
+const listNotes = function () {
+  const notes = loadNotes();
 
-    console.log('------Your Notes-------')
-    
-    notes.forEach(note => {
-        console.log(note.title)
-    });
+  console.log("------Your Notes-------");
 
+  notes.forEach((note) => {
+    console.log(note.title);
+  });
+};
 
-}
+//read the notes
+const readNote = function (title) {
+  const notes = loadNotes();
+  const note = notes.find((note) => note.title === title);
+
+  if (note) {
+    console.log(note.title);
+    console.log(note.body);
+  } else {
+    console.log("The note was not found.");
+  }
+};
 
 //save notes in the JSON
 const saveNotes = function (notes) {
@@ -76,5 +86,6 @@ module.exports = {
   getNotes: getNotes,
   addNote: addNote,
   removeNote: removeNote,
-  listNotes: listNotes
+  listNotes: listNotes,
+  readNote: readNote,
 };
