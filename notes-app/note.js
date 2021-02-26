@@ -1,9 +1,5 @@
 const fs = require("fs");
 
-const getNotes = function () {
-  return "Your notes...";
-};
-
 //add new notes
 const addNote = function (title, body) {
   const notes = loadNotes();
@@ -83,7 +79,6 @@ const loadNotes = function () {
 
 //node exports
 module.exports = {
-  getNotes: getNotes,
   addNote: addNote,
   removeNote: removeNote,
   listNotes: listNotes,
