@@ -11,4 +11,3 @@ app.use("/", (req, res, next) => {
   res.sendFile(path.join(process.cwd() + '/public/views/index.html'));
 });
 app.listen(port);
-//# sourceMappingURL=index.js.map
